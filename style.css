@@ -1,0 +1,426 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding-top: 70px;
+    background-color: rgb(19, 19, 19);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    width: 100%;
+    padding:1rem 8rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 60px;
+    background-color: rgb(36, 36, 36);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+h1{
+    color: white;
+}
+h1:hover{
+    color: rgb(17, 97, 247);
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 30px;
+    font-size: 17px;
+}
+.nav a:hover{
+    color: rgb(17, 97, 247);
+}
+.hamburger{
+    color: white;
+    display: none;
+}
+.home{
+    margin-top: 7rem;
+    padding: 0 10rem ;
+    display: flex;
+    align-items: center;
+    
+}
+.left-side{
+    color: white;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.right-side{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.img{
+    width: 330px;
+    margin-left: 3rem;
+}
+.sa-pic{
+   width: 100%;
+   height: 300px;
+   border-radius: 10px;
+
+   
+}
+.sa-pic:hover{
+    transform: scale(1.08);
+}
+.about{
+    margin-top: 10rem;
+    padding: 0 10rem;
+}
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 5rem;
+}
+.about-me:hover{
+    color:rgb(17, 97, 247) ;
+}
+.detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+
+.left{
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    color: white;
+    line-height: 35px;
+    font-size: 18px;
+
+}
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.right img{
+    width: 300px;
+    border-radius: 10px;
+
+}
+.right img:hover{
+    transform: scale(1.08);
+}
+.PROJECT-CON{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.project{
+    position: relative;
+    border: 1px solid rgb(74, 74, 74);
+    border-radius: 5px;
+    background-color: rgb(62, 61, 61);
+    padding: 1.5rem 1.5rem 1rem 1.5rem ;
+}
+.project-pic img{
+    width: 250px;
+    height: 200px;
+}
+.project-pic img:hover{
+    transform: scale(1.1);
+}
+.project-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p{
+    margin-top: 20px;
+    color: white;
+    line-height: 30px;
+}
+.more-info{
+    position: absolute;
+    background-color:rgb(49, 47, 47);
+    color: whitesmoke;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    line-height: 36px;
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px;
+}
+.more-info:hover {
+    opacity: 1;
+}
+.btn{
+    background-color:rgb(17, 97, 247) ;
+    border: 0.5px solid white;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px 28px;
+}
+.btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: white;
+    border: 0.5px solid rgb(62, 61, 61);
+    color:rgb(62, 61, 61) ;
+    border-radius: 10px;
+
+}
+.contact-container{
+    display: flex;
+    padding: 0 10rem;
+}
+.left-col{
+    flex: 1;
+    color: white;
+}
+.let{
+    font-size: 24px;
+    margin-bottom: 2rem;
+}
+span{
+    color: rgb(17, 97, 247);
+}
+.mail-icon{
+    font-size: 24px;
+}
+.gmail-con{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 2rem;
+}
+.fb-icon{   
+    padding: 8px 14px;
+    border-radius: 50%;
+}
+.each-icon{   
+    padding: 9px 11px;
+    border-radius: 50%;
+}
+.fb-icon:hover{
+    background-color: rgb(52, 50, 50);
+    padding: 8px 14px;
+    border-radius: 50%;
+    transform: scale(1.09);
+}
+.each-icon:hover{
+    background-color: rgb(52, 50, 50);
+    padding: 9px 11px;
+    border-radius: 50%;
+    transform: scale(1.09);
+}
+.icons{
+    font-size: 26px;
+    display: flex;
+    gap: 3.2rem;
+}
+.right-con{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-left: 2rem;
+    background-color:rgb(62, 61, 61) ;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 1rem;
+}
+.mail-name{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+.Name, .Gmail{
+    max-width: 378px;
+    padding: 20px 5px;
+    border: 0.5px solid white;
+    border-radius: 4px;
+    color: rgb(62, 61, 61);
+
+}
+.textarea{
+    max-width:380px ;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 58px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: rgb(62, 61, 61);
+}
+.send{
+    width: 100px;
+    padding: 10px 20px;
+    background-color:  rgb(17, 97, 247);
+    border: 1px solid white;
+    color: white;
+}
+.send:hover{
+    background-color:  rgb(11, 81, 210);
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.problem {
+    margin-top: 1.2rem;
+}
+.problem a{
+    text-decoration: none;
+}
+.end{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  only screen and (max-width:600px)  {
+    .nav{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        background-color: rgb(36, 36, 36);
+        padding: 20px 0 ;
+        border-top: 0.5px solid white;
+       
+
+    }
+    .nav.active{
+        left: 0;
+        transition: 0.15s;
+    }
+    .nav a{
+        font-size: 14px;
+        color:white;
+    }
+    .hamburger{
+        display: block;
+        font-size: 20px;
+    }
+    .hamburger.active{
+        font-size: 20px;
+        display: block;
+    }
+    .home{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3.5rem;
+    
+    }
+    .img{
+        width: 300px;
+        margin-left: 0;
+    }
+    .header{
+        padding: 1rem 3rem;
+    }
+    .detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .left{
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 4rem;
+    }
+    .about{
+        margin-top: 7rem;
+        padding: 0px 1rem;
+       
+    }
+    .project-container{
+        display: grid;
+        grid-template-columns: 300px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 5rem;
+        padding: 0;
+        align-items: center;
+    }
+    .Name, .Gmail{
+        max-width: 308px;
+    }
+    .textarea{
+        max-width: 310px;
+    }
+    .right-con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+
+
+
+    
+}
